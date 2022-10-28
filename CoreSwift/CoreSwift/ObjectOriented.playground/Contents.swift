@@ -2,7 +2,8 @@
 
 import UIKit
 
-// MARK: - Convenience init
+//: ### Convenience init
+//: > Secondary initializer
 
 //extension UIColor {
 //    convenience init(r: CGFloat, g: CGFloat, b: CGFloat) {
@@ -31,7 +32,7 @@ import UIKit
 //print(person1.fullName)
 //print(person2.fullName)
 
-// MARK: - Computed properties
+//: ### Computed properties
 
 //var radius: Double = 10
 //
@@ -87,7 +88,7 @@ import UIKit
 //print(firstName)
 //print(lastName)
 
-// MARK: - Property observers
+//: ### Property observers
 
 //var text: String = "Hello" {
 //    willSet(newValue) {
@@ -115,7 +116,7 @@ import UIKit
 //
 //percentage = 78
 
-// MARK: - Failable init
+//: ### Failable init
 
 //enum NoName: Error {
 //    case noName
@@ -164,7 +165,7 @@ import UIKit
 //    print("Company has no growth")
 //}
 
-// MARK: - Override method, init, property
+//: ### Override method, init, property
 
 //class Vehicle {
 //
@@ -266,7 +267,7 @@ import UIKit
 //
 //class Shady: Dog {
 //
-    /// Cannot override with a stored property
+    // Cannot override a stored property
 //    override var breed: Breed = .rottweiler
 //    override var name: String = "Shady"
 //
@@ -314,7 +315,7 @@ import UIKit
 //print(earth2.mainElement)
 //print(earth2.diameter)
 
-// MARK: - Two-phase init
+//: ### Two-phase init
 
 //struct NuclearRocket {
 //    var meters: Double
@@ -369,10 +370,8 @@ import UIKit
 //print(dissHome.meter)
 //print(dissHome.cm)
 
-// MARK: - Type property and method
-
-/// static cannot be overriden; class can be
-///
+//: ### Type property and method
+//: > static cannot be overriden; class can be
 
 //struct SomeStruct {
 //    static var someText = "this is statict"
@@ -433,7 +432,7 @@ import UIKit
 //print(Information.name)
 //Information.age()
 
-// MARK: - Singleton
+//: ### Singleton
 
 //class SomethingSingleton {
 //
@@ -446,7 +445,7 @@ import UIKit
 //
 //SomethingSingleton.shared.name
 
-// MARK: - Classes vs Structs
+//: ### Classes vs Structs
 
 
 /// Default initializer sets up fields
@@ -490,7 +489,7 @@ import UIKit
 //
 //}
 
-/// By value vs by reference
+//: > By value vs by reference
 //var dog = AnimalStruct(name: "Dog", pos: 10, maxSpeed: 4)
 //var husky = dog
 //dog.pos = 5
@@ -503,7 +502,7 @@ import UIKit
 //cat.pos
 //tabby.pos
 //
-//// Only classes can be subclassed
+//: > Only classes can be subclassed
 //class DogClass: AnimalClass {
 //
 //    override func makeNoise() {
@@ -517,7 +516,7 @@ import UIKit
 ////
 ////}
 //
-//// Cannot change a constant struct but can change a constant class
+//: > Cannot change a constant struct but can change a constant class
 //let tortoise = AnimalClass(name: "Tortoise", pos: 5, maxSpeed: 1)
 //tortoise.pos = 10
 //tortoise.pos
@@ -526,7 +525,7 @@ import UIKit
 // Compilation error
 //hare.pos = 5
 
-// MARK: - ViewModel
+//: ### ViewModel
 
 //class Car {
 //
@@ -571,7 +570,7 @@ import UIKit
 
 //print(carViewModel.year)
 
-// MARK: - Build a user
+//: ### Build a user
 
 enum UserType {
     case free

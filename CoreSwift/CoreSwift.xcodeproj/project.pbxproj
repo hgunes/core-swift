@@ -23,11 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE97F04829105D6B00EBB5E5 /* Combine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEDB0C852904344500305B1E /* CoreSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDB0C882904344500305B1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BEDB0C8F2904345900305B1E /* Functional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functional.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEDB0C90290434B100305B1E /* ProtocolOriented.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ProtocolOriented.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEDB0C912904352000305B1E /* ObjectOriented.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObjectOriented.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEDB0C92290D766C00305B1E /* AdvancedEnums.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdvancedEnums.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,8 @@
 				BEDB0C912904352000305B1E /* ObjectOriented.playground */,
 				BEDB0C90290434B100305B1E /* ProtocolOriented.playground */,
 				BEDB0C8F2904345900305B1E /* Functional.playground */,
+				BEDB0C92290D766C00305B1E /* AdvancedEnums.playground */,
+				BE97F04829105D6B00EBB5E5 /* Combine.playground */,
 			);
 			path = CoreSwift;
 			sourceTree = "<group>";

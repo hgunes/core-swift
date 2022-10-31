@@ -220,6 +220,20 @@ class HRDepartment: Work {
     }
 }
 
+struct GovernmentalWork: WorkFacility {
+    func employ() {
+        print("We give people job!")
+    }
+    
+    func pay() {
+        print("We pay our employees")
+    }
+    
+    func fire() {
+        print("We can fire them!")
+    }
+}
+
 let government = Government()
 let school = School(assigning: government)
 let work = Work(assigning: government)
@@ -230,8 +244,12 @@ let work = Work(assigning: government)
 //work.employ()
 //work.pay()
 //work.fire()
+//
+//let hrDepartment = HRDepartment(assigning: government)
+//hrDepartment.employ()
+//hrDepartment.train()
+//hrDepartment.fire()
 
-let hrDepartment = HRDepartment(assigning: government)
-hrDepartment.employ()
-hrDepartment.train()
-hrDepartment.fire()
+let governmentalWork = GovernmentalWork()
+government.workFacilityDelegate = governmentalWork
+government.workFacilityDelegate?.employ()

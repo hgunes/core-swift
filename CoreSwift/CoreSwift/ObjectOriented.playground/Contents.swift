@@ -1,3 +1,5 @@
+
+
 //: # Object Oriented Programming
 
 import UIKit
@@ -10,6 +12,8 @@ import UIKit
 //        self.init(displayP3Red: r/255, green: g/255, blue: b/255, alpha: 1)
 //    }
 //}
+
+// MARK: - Practice 1
 
 //class Person {
 //    var fullName: String
@@ -31,6 +35,8 @@ import UIKit
 //
 //print(person1.fullName)
 //print(person2.fullName)
+
+// MARK: - Practice 2
 
 //: ### Computed properties
 
@@ -63,6 +69,8 @@ import UIKit
 //
 //area = 225
 //side
+
+// MARK: - Practice 1
 
 //var firstName = "Harun"
 //var lastName = "Gunes"
@@ -521,9 +529,9 @@ import UIKit
 //tortoise.pos = 10
 //tortoise.pos
 //
-//let hare = AnimalStruct(name: "Hare", pos: 0, maxSpeed: 5)
+//let mouse = AnimalStruct(name: "Mouse", pos: 0, maxSpeed: 5)
 // Compilation error
-//hare.pos = 5
+//mouse.pos = 5
 
 //: ### ViewModel
 
@@ -665,19 +673,18 @@ struct PlatformGenerator {
                                     Platform(name: "Weather", duration: 12, price: 29.99, isTrialOn: true),
                                     Platform(name: "Currency", duration: 12, price: 29.99, isTrialOn: true),
                                     Platform(name: "Sports", duration: 12, price: 29.99, isTrialOn: false),
-                                    Platform(name: "Films", duration: 12, price: 29.99, isTrialOn: false)
-                                    ]
+                                    Platform(name: "Films", duration: 12, price: 29.99, isTrialOn: false)]
     
 }
 
-let user = User(username: "Harun", password: "123", email: "h@h.com")
+//let user = User(username: "Harun", password: "123", email: "h@h.com")
 //
 //user.purchase()
 //
 //user.cancelMembership()
-
+//
 //print(user)
-
-let premiumUser = User(username: "Harun", password: "123", email: "dsf", premiumSignup: true)
+//
+//let premiumUser = User(username: "Harun", password: "123", email: "dsf", premiumSignup: true)
 
 

@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		BE97F04829105D6B00EBB5E5 /* Combine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BE97F0492911A7E100EBB5E5 /* AdvancedSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdvancedSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEDB0C852904344500305B1E /* CoreSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDB0C882904344500305B1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BEDB0C8F2904345900305B1E /* Functional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functional.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -68,6 +69,7 @@
 				BEDB0C8F2904345900305B1E /* Functional.playground */,
 				BEDB0C92290D766C00305B1E /* AdvancedEnums.playground */,
 				BE97F04829105D6B00EBB5E5 /* Combine.playground */,
+				BE97F0492911A7E100EBB5E5 /* AdvancedSwift.playground */,
 			);
 			path = CoreSwift;
 			sourceTree = "<group>";

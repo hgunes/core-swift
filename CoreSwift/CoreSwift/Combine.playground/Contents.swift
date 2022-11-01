@@ -100,3 +100,16 @@ import Combine
 //subject.send("B")
 //subject.send("C")
 //subject.send("D")
+
+//: ## Transforming Operators
+//: ### 1) Collect
+let myArray = ["A", "B", "C", "D"]
+//
+//myArray.publisher.collect(1).sink {
+//    print($0)
+//}
+
+//: ### 2) Map
+myArray.publisher.map {
+    print($0.lowercased())
+}

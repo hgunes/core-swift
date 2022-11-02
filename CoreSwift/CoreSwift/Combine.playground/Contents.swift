@@ -103,13 +103,152 @@ import Combine
 
 //: ## Transforming Operators
 //: ### 1) Collect
-let myArray = ["A", "B", "C", "D"]
+//let myArray = ["A", "B", "C", "D"]
 //
 //myArray.publisher.collect(1).sink {
 //    print($0)
 //}
 
 //: ### 2) Map
-myArray.publisher.map {
-    print($0.lowercased())
-}
+//myArray.publisher.map {
+//    print($0.lowercased())
+//}
+
+//: ### 3) Map Key Path
+//struct Point {
+//    let x: Int
+//    let y: Int
+//}
+//
+//let publisher = PassthroughSubject<Point, Never>()
+//
+//publisher.map(\.x, \.y).sink { x, y in
+//    print("x: \(x)\ny: \(y)")
+//}
+//
+//publisher.send(Point(x: 5, y: 8))
+
+//: ### 4) FlatMap
+//struct School {
+//    let name: String
+//    let numOfStudents: CurrentValueSubject<Int, Never>
+//
+//    init(name: String, num: Int) {
+//        self.name = name
+//        self.numOfStudents = CurrentValueSubject(num)
+//    }
+//}
+//
+//let citySchool = School(name: "City School", num: 150)
+//
+//let school = CurrentValueSubject<School, Never>(citySchool)
+//
+//school.flatMap {
+//    $0.numOfStudents
+//}
+//.sink {
+//    print($0)
+//}
+//
+//let townSchool = School(name: "Town School", num: 50)
+//
+//school.value = townSchool
+//
+//citySchool.numOfStudents.value = 48
+//townSchool.numOfStudents.value += 12
+
+//: ### 5) ReplaceNil
+//["a", "b", nil, "d"].publisher.replaceNil(with: "-")
+//    .map { $0! }
+//    .sink {
+//        print($0)
+//}
+
+//: ### 6) ReplaceEmpty
+//let empty = Empty<Int, Never>()
+//
+//empty
+//    .replaceEmpty(with: 5)
+//    .sink(receiveCompletion: { print($0) }, receiveValue: { print($0) })
+
+//: ### 7) Scan
+//let publisher = (1...10).publisher
+//
+//publisher.scan([]) { number, value -> [Int] in
+//    number + [value]
+//}
+//.sink {
+//    print($0)
+//}
+
+//: ## Filtering Operators
+//: ### 1) Filter
+//let grades = ["A", "A", "A", "B", "C", "D"].publisher
+//
+//grades.filter {
+//    $0 == "A"
+//}
+//.sink {
+//    print($0)
+//}
+
+//: ### 2) Remove Duplicates
+//let words = "apple apple fruit apple mngo watermelon apple".components(separatedBy: " ").publisher
+//
+//words
+//    .removeDuplicates() // it only removes the duplicates in a sequence. After a new value, it may appear again.
+//    .sink {
+//        print($0)
+//    }
+
+//: ### 3) Compact Map
+//let strings = ["a", "1.3", "4", "b"].publisher
+//
+//strings
+//    .compactMap {
+//        Float($0)
+//}
+//    .sink {
+//        print($0)
+//    }
+
+//: ### 4) First & Last
+
+/*:
+ > ---
+ 
+ * .first finds where it first appears based on the filter
+ 
+ * .last finds where it last appears based on the filter
+*/
+//let numbers = (1...10).publisher
+//
+//numbers
+//    .last(where: { $0 % 3 == 0})
+//    .sink {
+//        print($0)
+//    }
+
+
+//: ### 5) Drop First
+//let nums = (1...20).publisher
+//
+//nums
+//    .dropFirst(12)
+//    .sink {
+//        print($0)
+//    }
+
+// MARK: - Filtering practice
+
+let numbers = (1...100).publisher
+
+numbers
+    .dropFirst(50)
+    .prefix(20)
+    .filter {
+        $0 % 2 == 0
+    }
+    .sink {
+        print($0)
+    }
